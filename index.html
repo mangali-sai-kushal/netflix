@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Netflix Clone</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body {
+			font-family: 'Roboto', sans-serif;
+			background-color: #141414;
+			color: #fff;
+		}
+		header {
+			background-color: #141414;
+			padding: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		header a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 2rem;
+			margin-right: 20px;
+		}
+		header a:hover {
+			color: #e50914;
+		}
+		section {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin: 20px;
+		}
+		section img {
+			width: 300px;
+			height: 450px;
+			object-fit: cover;
+			margin: 10px;
+			box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+			border-radius: 5px;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+		}
+		section img:hover {
+			transform: scale(1.05);
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-top: 50px;
+		}
+		.container h1 {
+			font-size: 3rem;
+			margin-bottom: 20px;
+		}
+		.container p {
+			font-size: 1.2rem;
+			margin-bottom: 30px;
+		}
+		.container button {
+			background-color: #e50914;
+			color: #fff;
+			border: none;
+			padding: 15px 30px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 1.2rem;
+			transition: all 0.3s ease-in-out;
+		}
+		.container button:hover {
+			background-color: #f43f50;
+		}
+		@media screen and (max-width: 768px) {
+			section {
+				flex-direction: column;
+			}
+			section img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="#">Netflix</a>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#">TV Shows</a>
+			<a href="#">Movies</a>
+			<a href="#">New & Popular</a>
+			<a href="#">My List</a>
+		</nav>
+	</header>
+	<section>
+		<img src="C:\Users\msaikushal\Downloads\st.jpg" alt="Stranger Things">
+		<img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/44d451133384465.61bc0ede4484e.png" alt="The Witcher">
+		<img src="https://image.tmdb.org/t/p/original/1M876KPjulVwppEpldhdc8V4o68.jpg" alt="The Crown">
+		<img src="https://m.media-amazon.com/images/I/81nTw+95MyL.jpg" alt="Narcos">
+		<img src="https://image.tmdb.org/t/p/original/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg" alt="Money Heist">
+		<img src="https://preview.redd.it/hz87ais1ycf71.jpg?auto=webp&s=fc30ec0d2c7da506499c7e3fccd69bf10941f540" alt="Lucifer">
+	</section>
+	<div class="container">
+		<h1>Unlimited movies, TV shows, and more.</h1>
+		<p>Watch anywhere. Cancel anytime.</p>
+		<button>Join free for a month</button>
+	</div>
+</body>
+</html>
